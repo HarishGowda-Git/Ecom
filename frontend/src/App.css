@@ -6,7 +6,7 @@ body{
   background-color: rgb(255, 173, 65);
   position: absolute;
   left: 90vw;
-  top: 4vw;
+  top: 3vw;
   width: 8vw;
   height: 2vw;
   border: none;
@@ -21,26 +21,46 @@ body{
 .body-font{} */
 
 /* Navbar css */
+#logo img{
+  position: absolute;
+  width: 5vw;
+  left: 30px;
+  top: 1vw;
+}
 .navbar{
   background-color: rgb(15, 15, 82);
   height: 8vw;
   color:whitesmoke;
   text-align: start;
-  margin-top: -18px;
+  margin-top: 0;
   position: sticky;
+  padding-left: 100px;
 }
 ul{
   list-style: none;
   position: absolute;
-  margin-top: 50px;  
+  
+  left: 170px;
 }
 
 li{
   display: inline;
+  color: whitesmoke;
+  position: relative;
+  top: 35px; 
   margin-left: 30px;
-  margin-top: 10px;
+  text-decoration: none;
 }
+
 li:hover{
   color: rgb(255, 173, 65);
   cursor: pointer;
+}
+.links{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: large;
+}
+.links:hover{
+  color: rgb(255, 173, 65);
 }

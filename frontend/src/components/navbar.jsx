@@ -1,19 +1,45 @@
 import { Button } from 'primereact/button';
+import { useState } from 'react';
+import {Link, useLocation} from 'react-router-dom'
+import img from '../assets/logo.png';
+
 const Navbar = () => {
+    const location = useLocation();
+    const [user, setuser] = useState(true);
+
+    const navlinks = [
+      { path:'/', name:"Home"},
+      { path:'/mens', name:"Mens"},
+      { path:'/womens', name:"Womens"},
+      { path:'/kids', name:"Kids"},
+      { path:'/winter', name:"Winter Collections"},
+      { path:'/summer', name:"Summer Collections"},
+      { path:'/about', name:"About"},
+      { path:'/contact', name:"Contact Us"}
+    ];
+    
+    const userupdate = () =>{
+      setuser(!user);
+    }
+
     return ( 
-        <nav className="navbar">
-            
-                <ul>
-                   <li>Men</li>
-                   <li>Women</li>
-                   <li>Children</li>
-                   <li>Winter Collection</li>
-                   <li>Summer Collection</li>
-                   <li>About</li>
-                   <li>Contact Us</li>
-                </ul>
-                <Button label="Login/Sign-Up" id='login-btn'/>
+      <div className="navbar">
+        <nav >
+          <div id="logo">
+             <Link to="/"><img src={img} /></Link>
+          </div>
+               {navlinks
+                  .filter(link=> link.path!==location.pathname)
+                  .map(link=>(
+                    <li key={link.name} ><Link to={link.path} className='links'>{link.name}</Link></li>
+                  ))}
+
+                {user?
+                <Link to="/login"><Button label="Login/Signup" id='login-btn' onClick={userupdate} /></Link>:
+                ""
+                }
         </nav>
+      </div>
      );
 }
  
