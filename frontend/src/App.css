@@ -1,0 +1,66 @@
+body{
+  background-color: rgb(230, 230, 230);
+  max-width: 100vw;
+}
+#login-btn{
+  background-color: rgb(255, 173, 65);
+  position: absolute;
+  left: 90vw;
+  top: 3vw;
+  width: 8vw;
+  height: 2vw;
+  border: none;
+  border-radius: 10px;
+}
+#login-btn:hover{
+  scale: 1.2;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(248, 152, 26);
+}
+/* .heading{}D
+.body-font{} */
+
+/* Navbar css */
+#logo img{
+  position: absolute;
+  width: 5vw;
+  left: 30px;
+  top: 1vw;
+}
+.navbar{
+  background-color: rgb(15, 15, 82);
+  height: 8vw;
+  color:whitesmoke;
+  text-align: start;
+  margin-top: 0;
+  position: sticky;
+  padding-left: 100px;
+}
+ul{
+  list-style: none;
+  position: absolute;
+  
+  left: 170px;
+}
+
+li{
+  display: inline;
+  color: whitesmoke;
+  position: relative;
+  top: 35px; 
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+li:hover{
+  color: rgb(255, 173, 65);
+  cursor: pointer;
+}
+.links{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: large;
+}
+.links:hover{
+  color: rgb(255, 173, 65);
+}
