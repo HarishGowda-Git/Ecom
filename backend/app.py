@@ -1,7 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/assets/<path:filename>')
+def assets_provider(filename):
+    return send_from_directory('assets', filename)
 
 @app.route('/', methods=['GET'])
 def home():

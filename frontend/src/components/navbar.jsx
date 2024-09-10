@@ -1,12 +1,12 @@
 import { Button } from 'primereact/button';
 import { useState } from 'react';
 import {Link, useLocation} from 'react-router-dom'
-import img from '../assets/logo.png';
+
 
 const Navbar = () => {
     const location = useLocation();
     const [user, setuser] = useState(true);
-
+    
     const navlinks = [
       { path:'/', name:"Home"},
       { path:'/mens', name:"Mens"},
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="navbar">
         <nav >
           <div id="logo">
-             <Link to="/"><img src={img} /></Link>
+             <Link to="/"><img src='http://localhost:5000/assets/logo.png' alt=""/></Link>
           </div>
                {navlinks
                   .filter(link=> link.path!==location.pathname)

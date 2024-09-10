@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Products from './Products';
 const Items = ({ type }) => {
   const [style, setStyle] = useState(type); // Initialize with the 'type' prop
 
@@ -10,7 +10,7 @@ const Items = ({ type }) => {
 
   // Conditional rendering based on the 'style' state
   if (style === 'mens') {
-    return <div className="mens">Mens</div>;
+    return <div className="mens"><Products /></div>;
   } else if (style === 'womens') {
     return <div className="womens">Womens</div>;
   } else if (style === 'kids') {
