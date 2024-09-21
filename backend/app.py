@@ -14,49 +14,56 @@ def item_list():
             "cat": "men",
             "name": "item1",
             "price": 100,
-            "image": "/assets/products/item1.png"
+            "image": "/assets/products/item1.png",
+            "status":""
         },
         {
             "id": 2,
             "cat": "men",
             "name": "item2",
             "price": 250,
-            "image": "/assets/products/item2.png"
+            "image": "/assets/products/item2.png",
+            "status":""
         },
         {
             "id": 3,
             "cat": "kids",
             "name": "item3",
             "price": 50,
-            "image": "/assets/products/item3.png"
+            "image": "/assets/products/item3.png",
+            "status":""
         },
         {
             "id": 4,
             "cat": "women",
             "name": "item4",
             "price": 100,
-            "image": "/assets/products/item1.png"
+            "image": "/assets/products/item1.png",
+            "status":""
         },
         {
             "id": 5,
             "cat": "winter",
             "name": "item5",
             "price": 2500,
-            "image": "/assets/products/item2.png"
+            "image": "/assets/products/item2.png",
+            "status":""
         },
         {
             "id": 6,
             "cat": "summer",
             "name": "item6",
             "price": 150,
-            "image": "/assets/products/item3.png"
+            "image": "/assets/products/item3.png",
+            "status":""
         },
         {
             "id": 7,
             "cat": "kids",
             "name": "item7",
             "price": 350,
-            "image": "/assets/products/item3.png"
+            "image": "/assets/products/item3.png",
+            "status":""
         }
     ]
     

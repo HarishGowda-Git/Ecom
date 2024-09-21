@@ -108,4 +108,22 @@ li:hover{
 }
 
 /* Product Details */
-/* .product-overlay */
+.product-overlay{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  opacity: .6;
+  top: 0vh;
+}
+.detail-container{
+  width: 70vw;
+  z-index: 5;
+  background-color: white;
+  position: absolute;
+  top: 23vh;
+  left: 15vw;
+  height: 60vh;
+  border-radius: 10px;
+}
