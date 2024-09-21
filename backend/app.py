@@ -6,6 +6,7 @@ CORS(app)
 @app.route('/assets/<path:filename>')
 def assets_provider(filename):
     return send_from_directory('assets', filename)
+    
 @app.route('/itemslist')
 def item_list():
     items = [

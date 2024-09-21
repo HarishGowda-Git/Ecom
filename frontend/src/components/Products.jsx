@@ -39,7 +39,6 @@ const Products = ({category}) => {
   }
   const visi =() =>{
     setvisible(!visible);
-    
   }
   
   
@@ -69,11 +68,15 @@ const Products = ({category}) => {
     </div>
     {visible?
       <>
-       <div className="product-overlay"></div>
+       <div className="product-overlay" onClick={visi}></div>
        <div className="detail-container">
-         <img src={temp.image} alt="" width={500} />
+         <img src={temp.image} alt="" id='product-image' />
+         <h3 id='close' onClick={visi}>&times;</h3>
          <div className="product-content">
             <h2>{temp.name}</h2>
+            <br />
+            <h3>Product Description</h3><br />
+            <span><b>Price :</b>  Rs   {temp.price}/-</span>
          </div>
        </div>
        </>
