@@ -10,15 +10,15 @@ const Items = ({ type }) => {
 
   // Conditional rendering based on the 'style' state
   if (style === 'mens') {
-    return <div className="mens"><Products /></div>;
+    return <div className="mens"><Products category="men" /></div>;
   } else if (style === 'womens') {
-    return <div className="womens">Womens</div>;
+    return <div className="womens"><Products category="women" /></div>;
   } else if (style === 'kids') {
-    return <div className="kids">Kids</div>;
+    return <div className="kids"><Products category="kids" /></div>;
   } else if (style === 'summer') {
-    return <div className="summer">Summer</div>;
+    return <div className="summer"><Products category="summer" /></div>;
   } else {
-    return <div className="winter">Winter</div>;
+    return <div className="winter"><Products category="winter" /></div>;
   }
 };
 
