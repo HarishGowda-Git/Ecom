@@ -151,3 +151,72 @@ li:hover{
   padding: 0;
   padding-left: 15px;
 }
+
+/* Login CSS */
+.login-container{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100vw;
+  text-align: center;
+  align-items:center ;
+}
+.login{
+  width: 45%;
+  height: 65vh;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 5; 
+  background-color: antiquewhite;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 1px solid black;
+}
+input{
+  position: relative;
+  width: 250px;
+  padding-left: 20px;
+  height: 50px;
+  border: 2px solid rgb(15, 15, 82);
+  font-size: 1.5em;
+  border-radius: 10px;
+  background-color: transparent ;
+  line-height: 80px;
+  transform: 0.1s ease;
+  outline: none;
+  z-index: 111;
+}
+.labels{
+  font-size: 1.5em;
+  position: absolute;
+  transition: 0.2s ease;
+}
+input:focus + .labels,
+input:valid + .labels
+{
+  color: rgb(15, 15, 82);
+  height: 50px;
+  line-height: 50px;
+  transform:  translate(-15px, -27px);
+}
+.vr{
+  display: inline;
+  border: none;
+  position: absolute;
+  height: 60vh;
+  margin-top: 2.5vh;
+  z-index: 10;
+  background-color: rgb(136, 136, 136);
+  width: .2vw;
+}
+.register{
+  width: 45%;
+  height: 65vh;
+  display: inline;
+  position: absolute;
+  z-index: 5;
+  background-color: aquamarine;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
